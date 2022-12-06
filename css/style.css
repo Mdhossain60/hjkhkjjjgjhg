@@ -1,0 +1,248 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ ul,ol{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+ }
+ h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+    margin: 0;
+    padding: 0;
+ }
+
+  :root{
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont:'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+    --secondarycolor:#11161E;
+  }
+ body{
+    font-family: var(--primaryFont);
+ }
+
+
+.button {
+  background-color: var(--primaryColor);
+ color: white;
+  padding: 19px 37px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+ 
+  }
+
+ /* NAVBAR START HERE*/
+  #myCostomnav ul li a{
+   font-size: 16px;
+  font-weight: 400;
+  color: var(--secondarycolor);
+  padding: 42px 22.5px;
+  }
+
+  #myCostomnav ul li a:hover{
+   color: var(--primaryColor);
+  }
+
+
+  nav .iconspanel ul li{
+      display: inline-block;
+   }
+   nav .iconspanel ul li span,
+   nav .iconspanel ul li a{
+      font-size: 18px;
+      color: var(--secondarycolor);
+      padding: 0  13.5px;
+      position: relative;
+   }
+   nav .iconspanel ul li a .overly{
+      position: absolute;
+      width: 15px;
+      height: 15px;
+       line-height: 15px;
+      display: block;
+      text-align: center;
+      padding: 0;
+      border-radius: 50%;
+      color: white;
+      background-color: var(--primaryColor);
+       right: 16px;
+       top: 0;
+      
+   }
+    
+
+    nav .togglerButton{
+      font-size: 20px;
+      border: none;
+      outline: none;
+      padding: 0 15px;
+      background: transparent;
+    }
+
+  nav #smallMenu .offcanvasLogo{
+   height: 40px;
+  }
+.offcanvas-body{
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+  #smallMenu .small-menu li a{
+   font-size: 18px;
+   color:var(--secondarycolor);
+   border-bottom: 1px solid #ccc;
+   display: block;
+   padding: 10px 20px;
+ 
+  }
+
+   
+  nav #smallMenu .offcanvas-body .iconspanel{
+   text-align: center;
+   padding-top: 25px;
+  }   
+                
+ /* NAVBAR ENDS HERE*/
+
+
+  /*BANNER START HERE*/
+  #banner{
+   position: relative;
+  }
+  #banner .banner-slider{
+   height: 800px;
+   background-size: cover;
+   background-position: center;
+   
+  }
+  #banner .banner-slider .row{
+   height: 800px;
+  }
+  #banner .banner-slider .banner-ctn{
+   width: 45%;
+  }
+
+  #banner .banner-slider .banner-ctn h3{
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 600;
+   color: #1D1D1D;
+  }
+  #banner .banner-slider .banner-ctn h2{
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 74px;
+   color: #1D1D1D;
+   transition-delay: 0.4s;
+  }
+
+  #banner .banner-slider .banner-ctn p{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+   font-family: var(--secondaryFont);
+   color: #1D1D1D;
+   padding: 20px 0;
+   transition-delay: 0.8s;
+  }
+
+  #banner .banner-slider .banner-ctn a{
+   transition-delay: 1s;
+  }
+
+  #banner .banner-slider .banner-ctn > *{
+   transform:translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  } 
+  #banner .banner-slider.slick-active .banner-ctn > *{
+   transform:translateY(0px);
+   opacity: 1;
+  } 
+
+
+
+
+
+  .button span{
+   padding-top: 5px;
+  }
+
+  #banner .banner-slider .banner-ctn .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+    top: 3px;
+ }
+ 
+ #banner .banner-slider .banner-ctn .button span:after {
+   content: ' ';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ 
+ #banner .banner-slider .banner-ctn .button:hover span  {
+   padding-right: 25px;
+ }
+ 
+ #banner .banner-slider .banner-ctn .button:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+ 
+  
+ #banner .slick-dots{
+   position: absolute;
+   bottom: 15%;
+   left: 100px;
+ }
+     
+ #banner .slick-dots li{
+   display: inline-block;
+   margin: 0 5px;
+ }
+ #banner .slick-dots button{
+   width: 25px;
+   height: 12px;
+   border: none;
+   color: transparent;
+   border-radius: 6px;
+  transition: 0.5s;
+ }
+ #banner .slick-dots .slick-active  button{
+   width: 40px;
+   background-color: var(--primaryColor);
+ }
+
+
+  
+  /*BANNER START ENDS*/
+
+
+
+
+ /*CATEGORIES START HERE*/
+  #categories{
+    padding: 100px 0;
+  }
+
+  #categories .catagories-card img{
+    width: 100%;
+    display: block;
+  }
+  
+  #categories .catagories-card:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  /*CATEGORIES START ENDS*/
+
+
+
+
